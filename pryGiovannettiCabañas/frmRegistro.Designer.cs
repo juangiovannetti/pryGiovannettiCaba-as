@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmInicio));
             gbTipoCabañas = new GroupBox();
             txtDias = new TextBox();
             cmbPersonas = new ComboBox();
@@ -309,7 +310,9 @@
             Controls.Add(gbFormasDePago);
             Controls.Add(gbAdicionales);
             Controls.Add(gbTipoCabañas);
+            Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "frmInicio";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Reservas De Cabañas";
             Load += frmInicio_Load;
             gbTipoCabañas.ResumeLayout(false);
